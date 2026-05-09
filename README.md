@@ -179,4 +179,38 @@ Reports can be exported to CSV and shared with stakeholders monthly.
 
 ---
 
+## Policy Testing
+
+To verify the Anti-Spam policy was working correctly, a GTUBE standard spam test email was sent from a test Gmail account to pilot user Adele Vance.
+
+**Test Email Details:**
+- **Sender:** Attacker test Gmail account
+- **Recipient:** AdeleV@platexp.onmicrosoft.com
+- **Subject:** GTUBE spam filter test
+
+**Threat Explorer — Test email detected:**
+
+![Threat Explorer](screenshots/20-threat-explorer-test-email-detected.png)
+
+**Test email details in Threat Explorer:**
+
+![Threat Explorer Details](screenshots/21-threat-explorer-test-email-details.png)
+
+| Result | Value |
+|---|---|
+| Detection Technology | General Filter |
+| Delivery Action | Original Delivery |
+| Result | Quarantine |
+| Status | Blocked |
+
+**Test email confirmed in Quarantine:**
+
+![Quarantine](screenshots/22-quarantine-test-email.png)
+
+**Quarantine email details:**
+
+![Quarantine Details](screenshots/23-quarantine-test-email-details.png)
+
+**Conclusion:** The Contoso Anti-Spam policy successfully detected and quarantined the spam test email, confirming the policy is working exactly as configured. The email never reached Adele Vance's inbox.
+
 *Configured by Preshh | Microsoft Defender for Office 365 | Contoso Email Security Project*
